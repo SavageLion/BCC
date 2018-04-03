@@ -1,0 +1,22 @@
+{
+  "name": "vatsure-webclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "start"
+  },
+  "repository":{
+	"type":"git",
+	"url":"git+https://github.com/CQSGRC/VATSure.git"
+  },
+  "author": "Jason Lunderstedt",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.15.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

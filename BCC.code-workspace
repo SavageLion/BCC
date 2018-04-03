@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5500,
+		"liveServer.settings.root": "/",
+		"git.ignoreLimitWarning": true
+	}
+}

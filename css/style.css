@@ -30,11 +30,20 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+li {
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  margin-left: 40px;
+  
+}
+
+h1, h2, h3, h4, h5, h6, i {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  margin-bottom: 5%;
 }
 
 /* Back to top button */
@@ -696,8 +705,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
+
 #services {
-  background: url("../img/About-bg1.png") center top no-repeat fixed;
+  background: url("../img/ServicesBG.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -711,12 +721,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
 }
 
-#about .container {
+#services .container {
   position: relative;
   z-index: 10;
 }
+
 
 #services .box {
   margin-bottom: 30px;
@@ -785,6 +797,44 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: .9s;
 }
 
+#certification {
+  background: url("../img/CertBG.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#certification::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(136, 30, 30, 0.493);
+  z-index: 9;
+}
+
+#certification .container {
+  position: relative;
+  z-index: 10;
+}
+
+#technical {
+  background-color: #000;
+  background-image: url("../img/Technical.png");
+  background-position: right bottom; 
+  background-repeat: no-repeat; 
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#technical .container {
+  position: relative;
+  z-index: 10;
+}
+
+
 /* Facts Section
 --------------------------------*/
 #facts {
@@ -801,7 +851,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 9;
 }
 
@@ -994,42 +1044,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
   z-index: 9;
 }
 
 #clients .container {
   position: relative;
   z-index: 10;
-}
-
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
-}
-
-#clients img:hover {
-  opacity: 1;
-}
-
-#clients .owl-nav, #clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#clients .owl-dot.active {
-  background-color: #b90606;
 }
 
 /* Team Section
@@ -1048,7 +1069,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 9;
 }
 

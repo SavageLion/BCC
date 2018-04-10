@@ -6,9 +6,9 @@
   "scripts": {
     "test": "start"
   },
-  "repository":{
-	"type":"git",
-	"url":"git+https://github.com/SavageLion/BCC.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavageLion/BCC.git"
   },
   "author": "Jason Lunderstedt",
   "license": "ISC",
@@ -16,5 +16,6 @@
     "eslint": "^4.15.0"
   },
   "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

@@ -15,3 +15,47 @@
     left:50%;
     transform: translate(-50%,-50%);
 }
+
+/* HOME PAGE */
+
+.homePageDiv{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.homePageBg {
+    background-size:cover;
+    height:100%;
+    width:auto;
+    position: absolute;
+    left:50%;
+    transform: translateX(-46%)
+}
+
+.alarmAnimation {
+    width: 160px; 
+    position: absolute;
+    left: 74%;
+    bottom: 0%;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width:414px){
+    .loadingDiv{
+        width: 100%;
+    }
+    .loadingGif{
+        height: 40% !important;
+    }
+    .alarmAnimation{
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        left:50%;
+        bottom:2%;
+        transform: translateX(-50%)
+    }
+}
+

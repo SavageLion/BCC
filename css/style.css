@@ -1,13 +1,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-#mainpic {
-  background-size:cover;
-  width:100%;
-  position: absolute;
-}
-
-
 body {
   background: #fff;
   color: #666666;

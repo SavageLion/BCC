@@ -25,11 +25,24 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/morecss.css">
+
+  <!--Additional CSS by IA-->
+  <link rel="stylesheet" type="text/css" href="./css/more.css">
+
+
 
 </head>
 
 <body>
+    <!--==========================
+    Loading
+  ============================-->
+  <div id="loadingDiv" class="loadingDiv">
+    <script>
+      //$('#loadingDiv').css('height',screen.height).css('width', screen.width);
+    </script>
+    <img class="loadingGif" src="./img/loading.gif">
+  </div>
   <!--==========================
     Header
   ============================-->
@@ -765,7 +778,7 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
@@ -784,5 +797,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
  
+  <!--Additional JS by IA-->
+  <script src="js/more.js"></script>
 </body>
 </html>

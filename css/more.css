@@ -1,0 +1,17 @@
+/* LOADING SCREEN */
+
+.loadingDiv{
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+}
+
+.loadingGif{
+    height: 50%;
+    position: relative;   
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,3 +1,5 @@
 {
-    "html.autoClosingTags": true
+    "html.autoClosingTags": true,
+    "jshint.packageManager": "npm",
+    
 }

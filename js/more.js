@@ -5,8 +5,9 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-12 20:03:58
+ * Last modified  : 2018-04-12 22:28:40
  */
+console.log('02_Load Start Script');
 
  $(window).load(function(){
      setTimeout(function(){
@@ -15,7 +16,6 @@
  });
 
  /* Functions that must run when document is ready */
-
 $(document).ready(function(){
     $('.nav-menu').onePageNav();
 });

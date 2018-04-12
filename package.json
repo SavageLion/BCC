@@ -1,21 +1,52 @@
 {
-  "name": "bcc",
-  "version": "1.0.0",
+  "name": "building_code_consultants",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.html",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "start"
+    "start": "webpack --watch --config webpack.config.dev.js --mode development",
+    "build": "webpack --config webpack.config.dev.js --display-modules --mode development"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SavageLion/BCC.git"
   },
-  "author": "Jason Lunderstedt",
+  "author": "Jason Lunderstedt, Cliff Crerar, Themba Matchika",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^4.15.0"
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.15.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "jshint": "^2.9.5",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack-manifest-plugin": "^2.0.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "bootstrap": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
   }
 }

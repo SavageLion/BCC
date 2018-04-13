@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, i {
 
 @media (min-width: 1024px) {
   #header #logo {
-    padding-left: 60px;
+    padding-left: 10px;
   }
 }
 
@@ -666,7 +666,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col:hover .icon {
-  background-color: #fff;
+  background-color: black;
+  transform: scale(1.2);
+  border: 4px solid black;
 }
 
 #about .about-col:hover i {
@@ -964,6 +966,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item figure .link-preview:hover, #portfolio .portfolio-item figure .link-details:hover {
   background: #b90606;
+  color: white;
 }
 
 #portfolio .portfolio-item figure .link-preview:hover i, #portfolio .portfolio-item figure .link-details:hover i {
@@ -971,8 +974,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
-  top: calc(50% - 18px);
+  left: calc(50%);
+  top: calc(50%);
 }
 
 #portfolio .portfolio-item figure .link-details {
@@ -982,7 +985,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item figure:hover .link-preview {
   visibility: visible;
-  left: calc(50% - 44px);
+  /* left: calc(50% - 44px); */
 }
 
 #portfolio .portfolio-item figure:hover .link-details {
@@ -1103,6 +1106,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(0, 0, 0, 0.7);
   visibility: visible;
   transition: 0.4s;
+  border-radius: 5px;
 }
 
 #team .member:hover .member-info-content {

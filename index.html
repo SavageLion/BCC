@@ -9,16 +9,15 @@
 
   <!-- Favicons -->
   <link href="img/bcc_vector_xQ3_icon.ico" rel="icon">
-  <link href="img/bcc_vector_xQ3_icon.ico" rel="apple-touch-icon">
-  <script src="https://use.fontawesome.com/a7b8897ce4.js"></script>
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Rubik" rel="stylesheet">
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!--<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -50,8 +49,8 @@
   <header id="header">
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">BUILDING CODE CONSULTANTS</a></h1>
+      <div id="logo">
+        <h1><a href="#intro" class="scrollto">BUILDING CODE CONSULTANTS<span class="bldIcon fas fa-book"></span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -97,11 +96,15 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/2.jpg" alt="" class="img-fluid">
-                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-fire-extinguisher fa-2x" aria-hidden="true"></i></div>
+                
+                <div class="ImgOverHide">
+                  <img src="img/AboutUs/2.jpg" alt="">
+                </div>
+                  
+                <div class="icon"><span style="color:white; margin-top:2px" class="fab fa-hotjar fa-2x" aria-hidden="true"></i></div>
               </div>
               <h2 class="title"><a href="#">FIRE ENGINEERING</a></h2>
-              <p>
+              <p class="about-col-p">
                 Fire Engineering is a powerful tool in the hands of those qualified to use it.  It can be employed not only for the Building Owners/Developer but for the Property Development Industry as a whole.
               </p>
             </div>
@@ -110,11 +113,15 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/1.jpg" alt="" class="img-fluid">
-                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-codepen fa-2x" aria-hidden="true"></span></div>
+                
+                <div class="ImgOverHide">
+                  <img src="img/AboutUs/1.jpg" alt="">
+                </div>
+
+                <div class="icon"><span style="color:white; margin-top:2px" class="fas fa-hands-helping fa-2x" aria-hidden="true"></span></div>
               </div>
               <h2 class="title"><a href="#">INDUSTRY EXPERTS</a></h2>
-              <p>
+              <p class="about-col-p">
                 Building Code Consultants is a dedicated Fire Protection Consultancy with more than 42 years of experience to draw on.  We have at our fingertips the knowledge and expertise to interpret relevant rules, regulations and by-laws in the mass of sometimes confusing information, regarding installation codes of practice and other ambiguous regulations laid down by various Authorities.
               </p>
             </div>
@@ -123,8 +130,12 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/3.jpg" alt="" class="img-fluid">
-                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-child fa-2x" aria-hidden="true"></span></i></div>
+
+                <div class="ImgOverHide">
+                  <img src="img/AboutUs/3.jpg" alt="">
+                </div>
+
+                <div class="icon"><span style="color:white; margin-top:2px" class="fas fa-first-aid fa-2x" aria-hidden="true"></span></i></div>
               </div>
               <h2 class="title"><a href="#">RESPONSIBILITY</a></h2>
               <p>
@@ -136,7 +147,11 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/4.jpg" alt="" class="img-fluid">
+
+                <div class="ImgOverHide">
+                  <img src="img/AboutUs/4.jpg" alt="" >
+                </div>
+
                 <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-university fa-2x" aria-hidden="true"></span></div>
               </div>
               <h2 class="title"><a href="#">EXPERIENCED</a></h2>
@@ -149,8 +164,12 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/5.jpg" alt="" class="img-fluid">
-                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-building-o fa-2x" aria-hidden="true"></span></div>
+
+                <div class="ImgOverHide">
+                  <img src="img/AboutUs/5.jpg" alt="" >
+                </div>
+
+                <div class="icon"><span style="color:white; margin-top:2px" class="fas fa-gem fa-2x" aria-hidden="true"></span></div>
               </div>
               <h2 class="title"><a href="#">QUALITY</a></h2>
               <p>
@@ -162,8 +181,12 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
             <div class="about-col">
               <div class="img">
-                <img src="img/AboutUs/6.jpg" alt="" class="img-fluid">
-                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-calendar fa-2x" aria-hidden="true"></span></i></div>
+
+                <div class="ImgOverHide">
+                    <img src="img/AboutUs/6.jpg" alt="" >
+                </div>
+                
+                <div class="icon"><span style="color:white; margin-top:2px" class="fa fa-binoculars fa-2x" aria-hidden="true"></span></i></div>
               </div>
               <h2 class="title"><a href="#">FUTURE THINKING</a></h2>
               <p>
@@ -412,13 +435,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/1.png" class="img-fluid" alt="">
-                <a href="img/portfolio/1.png" data-lightbox="portfolio" class="link-preview"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/1.png" class="figureImg" alt="Rosebank_link">
+                <a href="http://www.redefine.co.za/special/rosebank" data-lightbox="portfolio" class="link-preview"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Rosebank Link</a></h4>
-                <p>173 Oxford Rd, Rosebank, Johannesburg, 2196</p>
+                <p>Rosebank, Johannesburg</p>
               </div>
             </div>
           </div>
@@ -426,13 +449,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/2.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/2.jpg" class="figureImg" alt="cresta_shopping_centre">
+                <a href="http://www.crestashoppingcentre.co.za/" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Cresta Shopping Centre</a></h4>
-                <p>Beyers Naude Drive, Cresta, Randburg, 2118</p>
+                <p>Cresta, Randburg</p>
               </div>
             </div>
           </div>
@@ -440,13 +463,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/3.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/3.png" class="figureImg" alt="siemens_midrand">
+                <a href="http://www.saeec.org.za/members/siemens-southern-africa" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Siemens Midrand</a></h4>
-                <p>Janadel Ave, Halfway Gardens, Midrand, 1686</p>
+                <p>Halfway Gardens, Midrand</p>
               </div>
             </div>
           </div>
@@ -454,13 +477,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/4.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/4.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/4.jpg" class="figureImg" alt="menlyn_park">
+                <a href="img/portfolio/4.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Menlyn Park</a></h4>
-                <p>Atterbury Rd & Lois Ave, Menlyn Park, Pretoria, 0063</p>
+                <p>Pretoria East</p>
               </div>
             </div>
           </div>
@@ -468,13 +491,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/5.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/5.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/5.jpg" class="figureImg" alt="sandton_convention_centre">
+                <a href="img/portfolio/5.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Sandton Convention Centre</a></h4>
-                <p>161 Maude St, Sandton, Johannesburg, 2196</p>
+                <p>Sandton, Johannesburg</p>
               </div>
             </div>
           </div>
@@ -482,13 +505,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/6.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/6.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/6.jpg" class="img-fluid" alt="gateway_theatre">
+                <a href="img/portfolio/6.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Gateway Theatre of Shopping</a></h4>
-                <p>Gateway Ave, Umhlanga Ridge, Umhlanga, 4319</p>
+                <p>Umhlanga Ridge</p>
               </div>
             </div>
           </div>
@@ -496,13 +519,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/7.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/7.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/7.jpg" class="figureImg" alt="grand_west_casino">
+                <a href="img/portfolio/7.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Grand West Casino</a></h4>
-                <p>1 Jakes Gerwel Dr, Goodwood, Cape Town, 7460</p>
+                <p>Goodwood, Cape Town</p>
               </div>
             </div>
           </div>
@@ -510,8 +533,8 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/8.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/8.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/8.jpg" class="figureImg" alt="tinapa_resort">
+                <a href="img/portfolio/8.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
@@ -524,13 +547,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/9.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/9.jpg" class="link-preview" data-lightbox="portfolio"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/9.jpg" class="figureImg" alt="levy_junction">
+                <a href="img/portfolio/9.jpg" class="link-preview" data-lightbox="portfolio"><i class="viewEye fas fa-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Levy Junction Shopping Mall</a></h4>
-                <p>Sadzu Rd, Lusaka, Zambia</p>
+                <p>Lusaka, Zambia</p>
               </div>
             </div>
           </div>
@@ -566,9 +589,9 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="col-lg-4 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="img/Team/Tony_Hyams.JPG" class="img-fluid" alt="">
+              <img src="img/Team/Tony_Hyams.JPG" class="img-fluid" alt="1">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Tony Hyams</h4>
@@ -579,9 +602,9 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="member">
-              <img src="img/Team/John_Mackenzie.JPG" class="img-fluid" alt="">
+              <img src="img/Team/John_Mackenzie.JPG" class="img-fluid" alt="2">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>John Mackenzie</h4>
@@ -592,9 +615,9 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="member">
-              <img src="img/Team/Gareth_Hyams.JPG" class="img-fluid" alt="">
+              <img src="img/Team/Gareth_Hyams.JPG" class="img-fluid" alt="3">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Gareth Hyams</h4>
@@ -605,9 +628,9 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="member">
-              <img src="img/Team/Bradley_Hyams.JPG" class="img-fluid" alt="">
+              <img src="img/Team/Bradley_Hyams.JPG" class="img-fluid" alt="4">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Brad Hyams</h4>
@@ -617,9 +640,9 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="member">
-              <img src="img/Team/Lee_Arnold.JPG" class="img-fluid" alt="">
+              <img src="img/Team/Lee_Arnold.JPG" class="img-fluid" alt="5">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Lee Arnold</h4>
@@ -629,9 +652,9 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
             <div class="member">
-              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <img src="img/team-4.jpg" class="img-fluid" alt="6">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Rachel Chizunza</h4>
@@ -749,11 +772,11 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
             </div>
 
           </div>
@@ -776,11 +799,11 @@
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top"><i class="fabtt fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
@@ -794,6 +817,9 @@
   <script src="lib/_ia_added/jquery.nav.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+
+  <!--FONT AWESOME 5-->
+  <script src="./lib/font-awesome5/svg-with-js/js/fontawesome-all.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

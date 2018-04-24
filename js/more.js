@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-12 20:03:58
+ * Last modified  : 2018-04-13 01:06:30
  */
 
  $(window).load(function(){
@@ -19,3 +19,43 @@
 $(document).ready(function(){
     $('.nav-menu').onePageNav();
 });
+
+/* Resolve about us element hiegh issue */
+var blockHAdj = 0; // declare block adjust variable
+var imgHAdj = 0; // declare image adjust variable
+var titleHAdj = 0; // declare title adjust variable
+var parHAdj = 0; // devlare paragraph hight adjust variable
+$('.about-col').each(function(i,el){
+    
+    // find the largest img height
+    var imgHCheck = $(el).find('.img').height();
+    if(imgHCheck > imgHAdj){
+        imgHAdj = imgHCheck;
+    }
+    
+    // Find largest title area
+    var titleHCheck = $(el).find('.title').outerHeight();
+    if(titleHCheck > parHAdj){
+        titleHAdj = titleHCheck;
+    }
+
+    // Find largest block hieght
+    var blockHCheck = $(el).height();
+    if(blockHCheck > blockHAdj){
+        blockHAdj = blockHCheck;
+    }
+
+    //console.log('imgH: ',imgHCheck, 'titleH: ',titleHCheck, 'blockH: ',blockHCheck);
+});
+var titleMarginTop = $('.about-col').find('.title').css('margin-top').replace('px','');
+var titleMarginBottom = $('.about-col').find('.title').css('margin-bottom').replace('px','');
+var parPadding = $('.about-col').find('p').css('padding-bottom').replace('px','');
+parHAdj = blockHAdj - titleHAdj - imgHAdj - titleMarginTop - titleMarginBottom + Number(parPadding);
+//console.log('F imgH: ',imgHAdj, 'F titleH: ',titleHAdj, 'F blockH: ',blockHAdj, 'F parAdj:', parHAdj);
+//var nadj = blockHAdj+parPadding;
+$('.about-col').css('height',(blockHAdj+Number(parPadding))); // Adjust block hieghts 
+$('.about-col>.img').css('height', imgHAdj); // Adjust img hieghts
+$('.about-col>.img>.ImgOverHide').css('height', imgHAdj); // Adjust img hieghts
+$('.about-col>.img>.ImgOverHide>img').css('height', imgHAdj); // Adjust img hieghts
+$('.about-col>h2').css('height', titleHAdj); // Adjust title heights
+$('.about-col>p').css('height', parHAdj); // Adjust paragraphs heights

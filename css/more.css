@@ -129,3 +129,10 @@
     }
 }
 
+.Techset {
+    background:rgba(206, 69, 69, 0.7);
+    border:2px solid white;
+    border-radius: 10px;
+    color:white;
+
+}

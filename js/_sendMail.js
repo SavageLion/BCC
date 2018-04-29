@@ -5,12 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-23 20:18:03 
- * Last modified  : 2018-04-29 15:06:47
+ * Last modified  : 2018-04-29 16:05:50
  */
 
 // Declare sending IP
-// var URL = "http://34.242.179.249:8004/";
-var URL = 'http://172.16.0.104:8004/';
+var URL = "http://34.242.179.249:8008/";
+// var URL = 'http://172.16.0.104:8008/';
 // var URL = "http://192.168.1.184:8020/";
 // var URL = "http://192.168.1.128:8020/";
 

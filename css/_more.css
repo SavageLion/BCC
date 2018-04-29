@@ -111,7 +111,8 @@
         width:auto;
         position: absolute;
         left:50%;
-        transform: translateX(-46%)
+        transform: translateX(-46%);
+        height: 100%;
     }
     .loadingDiv{
         width: 100%;
@@ -127,6 +128,12 @@
         bottom:2%;
         transform: translateX(-50%)
     }
+    .svg-inline--fa{
+        color:white;
+    }
+    .img-fluid{
+        min-height: 100%;
+    }
 }
 
 .Techset {
@@ -134,5 +141,18 @@
     border:2px solid white;
     border-radius: 10px;
     color:white;
+}
 
+.bounceInUp{
+    padding: 1.5vh 3vh 1.5vh 3vh;
+}
+
+p.description{
+    margin: 0 !important;
+}
+
+.sendBtn{
+    padding: 2vh 3vw 2vh 3vw;
+    background: #cc0000;
+    color: white;
 }

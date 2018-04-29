@@ -55,23 +55,27 @@
     border-top-right-radius: 4px !important;
 }
 
-.about-col-p{
-    position: relative;
-}
-
-.about-col>.img{
-    width: 100%;
-}
-
 .about-col>.img>.ImgOverHide{
     position: relative;
     width: 100%;
     height: 100%;
 }
 
+.about-col>img{
+    height: 100%;
+}
+
 .ImgOverHide>img{
+    height: 100%;
     width: 100%;
 }
+
+/*
+.about-col>.title-text>p{
+    position: relative;
+    top:40%;
+    transform: translateY(-50%)
+}*/
 
 .figureImg{
     height: 100%;
@@ -155,4 +159,12 @@ p.description{
     padding: 2vh 3vw 2vh 3vw;
     background: #cc0000;
     color: white;
+}
+
+.service-sub-heading{
+    color: black;
+}
+
+.facts-sub-heading>h3{
+    font-size: 3rem !important;
 }

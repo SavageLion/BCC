@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-29 17:32:45 
- * Last modified  : 2018-04-29 20:51:07
+ * Last modified  : 2018-04-29 23:01:45
  */
 
 /****************************************/
@@ -21,26 +21,6 @@ import './node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME 5 */
 import './lib/font-awesome5/svg-with-js/js/fontawesome-all.js';
-
-/****************************************/
-/*         IA CSS AND JS FILES          */
-/****************************************/
-
-
-/* 
-** IA JS FILES
-*/
-import './js/01_htmlLoader.js';
-import './js/_alerts.js';
-
-/* 
-** IA CSS FILES
-*/
-//<!--Additional CSS by IA-->
-//<link rel="stylesheet" type="text/css" href="./css/_more.css">
-import './css/_more.css';
-//<link rel="stylesheet" type="text/css" href="./css/_alerts.css">
-import './css/_alerts.css';
 
 /****************************************/
 /*          TEMPLATE CSS FILES          */
@@ -73,5 +53,22 @@ import 'script-loader!./lib/touchSwipe/jquery.touchSwipe.min.js';
 import 'script-loader!./lib/_ia_added/jquery.nav.js';
 import 'script-loader!./js/main.js';
 
-import './js/_more.js';
+/****************************************/
+/*         IA CSS AND JS FILES          */
+/****************************************/
 
+
+/* 
+** IA JS FILES
+*/
+import './js/_htmlLoader.js';
+import './js/_alerts.js';
+import './js/_more.js';
+/* 
+** IA CSS FILES
+*/
+//<!--Additional CSS by IA-->
+//<link rel="stylesheet" type="text/css" href="./css/_more.css">
+import './css/_more.css';
+//<link rel="stylesheet" type="text/css" href="./css/_alerts.css">
+import './css/_alerts.css';

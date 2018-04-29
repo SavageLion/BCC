@@ -40,6 +40,6 @@
 		"jshint.trace.server": "messages",
 		"jshint.exclude": {
 			".jshintrc": true
-		}
+		},
 	}
 }

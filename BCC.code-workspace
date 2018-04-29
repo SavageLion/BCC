@@ -29,8 +29,17 @@
 		],
 		"typescript.format.enable": true,
 		"npm-intellisense.importQuotes": "'",
-		"jsFileHeader.Author": "Arjun Komath",
+		"jsFileHeader.Author": "Cliff Crerar",
 		"licenseInjector.owner": "Infinity Arc",
-		"licenseInjector.ignore": "node_modules,bin,js/main.js,lib"
+		"licenseInjector.ignore": "node_modules,bin,js/main.js,lib",
+		"jshint.config": ".jshintrc",
+		"jshint.enable": true,
+		"jshint.lintHTML": true,
+		"jshint.nodePath": "node_modules/jshint",
+		"jshint.packageManager": "npm",
+		"jshint.trace.server": "messages",
+		"jshint.exclude": {
+			".jshintrc": true
+		}
 	}
 }

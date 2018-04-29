@@ -8,5 +8,11 @@
     },
     "rules": {
         "semi": 2
+    },
+    "plugins": [
+        "html"
+    ],
+    "settings": {
+        "html/report-bad-indent": "error"
     }
 }

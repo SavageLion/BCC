@@ -9,13 +9,3 @@
  */
 
 //module.exports = (alertType) => {
-var showAlert = (alertType) => {
-    $(alertType).slideDown();
-    setTimeout(() => {
-        $(alertType).slideUp();
-    }, 5000);
-    $('.alert').on('click', (ev) => {
-        //console.log($(ev.currentTarget));
-        $(ev.currentTarget).slideUp();
-    });
-};

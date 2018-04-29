@@ -5,8 +5,8 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.port": 5551,
-		"liveServer.settings.root": "/",
+		"liveServer.settings.port": 5511,
+		"liveServer.settings.root": "/dist",
 		"git.ignoreLimitWarning": true,
 		"html.autoClosingTags": true,
 		"html.format.enable": true,

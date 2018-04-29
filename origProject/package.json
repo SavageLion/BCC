@@ -1,0 +1,26 @@
+{
+  "name": "bcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start",
+    "build": "webpack --config ./webpack.config.dev.js --display-modules --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavageLion/BCC.git"
+  },
+  "author": "Jason Lunderstedt",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

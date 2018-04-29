@@ -1,4 +1,8 @@
 {
     "charset": "UTF-8",
-    "viewport": "width=device-width, initial-scale=1.0"
+    "viewport": "width=device-width, initial-scale=1.0",
+    "Company": "Building Code Consultants",
+    "Industry": "Construction Health and Safety",
+    "Profession": "Fire Inspectors",
+    "Domain": "buildingcodeconsultants.com"
 }

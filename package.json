@@ -6,7 +6,8 @@
   "scripts": {
     "test": "start",
     "start": "webpack --watch --config ./webpack.config.dev.js --display-modules --mode development",
-    "build": "webpack --config ./webpack.config.dev.js --display-modules --mode development"
+    "build": "webpack --config ./webpack.config.dev.js --display-modules --mode development",
+    "prod": "webpack --config ./webpack.config.dev.js --display-modules --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,19 +17,21 @@
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-plugin-html": "^4.0.3",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jshint": "^2.9.5",
     "script-loader": "^0.7.2",
     "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
-    "webpack-manifest-plugin": "^2.0.1",
-    "jshint": "^2.9.5"
+    "webpack-manifest-plugin": "^2.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.1.0",

@@ -168,3 +168,22 @@ p.description{
 .facts-sub-heading>h3{
     font-size: 3rem !important;
 }
+
+.clients-sub-heading>h3{
+    font-size: 2rem !important;
+    color: black;
+}
+
+.portfolio-info>h4>a:hover{
+    color:black !important;
+}
+
+.teamMemberImage{
+    box-shadow: 0px 2px 12px rgba(248, 248, 248, 0.555);
+}
+
+.oddImage{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}

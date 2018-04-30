@@ -56,12 +56,13 @@ module.exports = {
     },
 
     plugins: [
+        new CleanWebpackPlugin(['dist']),
+        new ManifestPlugin(),
         new HTMLWebPackPlugin({
             title: 'Building Code Consultants',
             favicon: './img/bcc_vector_xQ3_icon.ico',
             meta: require('./json/meta.json')
         }),
-        new ManifestPlugin(),
-        new CleanWebpackPlugin(['dist'])
+
     ]
 };

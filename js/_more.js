@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-30 14:30:32
+ * Last modified  : 2018-04-30 14:54:54
  */
 
 $(window).on('load', function () {
@@ -31,6 +31,7 @@ $(document).ready(function () {
             }
         });
         //console.log(imgHeight);
+        imgHeight = 233;
         // Finds the tallest paragraph in all the objects
         $('.about-col>.title-text>p').each(function (i, p) {
             //console.log($(p).height());
@@ -54,14 +55,6 @@ $(document).ready(function () {
         desktopAboutView();
     }
 
-    // TEAM PICTURE SIZING
-
-    //var teamImageBmh = '80vh';
-    var teamImageWidth = $('.benchMarkDimension').width();
-    //console.log(teamImageBmh, teamImageWidth);
-    //$('.teamMemberImage').css('height', teamImageBmh);
-    $('.member').width(teamImageWidth);
-
     /* ON CLICK SEND MAIL */
     $('#sendBtn').on('click', function () {
         var msg = {
@@ -71,7 +64,7 @@ $(document).ready(function () {
             message: $('#message').val()
         };
         console.log('sendMail');
-        console.log(validateMail);
+        //console.log(validateMail);
         console.log(msg);
         validateMail(msg);
     });

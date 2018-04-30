@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-30 14:11:20
+ * Last modified  : 2018-04-30 14:54:54
  */
 
 $(window).on('load', function () {
@@ -30,6 +30,8 @@ $(document).ready(function () {
                 imgHeight = imgHeightCheck; // if the current element is higher then assign the current element hieght
             }
         });
+        //console.log(imgHeight);
+        imgHeight = 233;
         // Finds the tallest paragraph in all the objects
         $('.about-col>.title-text>p').each(function (i, p) {
             //console.log($(p).height());
@@ -38,13 +40,13 @@ $(document).ready(function () {
                 pHeight = pHeightCheck; // if the current element is higher then assign the current element hieght
             }
         });
-
-        //console.log('IMGH: ', imgHeight, 'PH: ', pHeight);
+        //console.log(pHeight);
+        console.log('IMGH: ', imgHeight, 'PH: ', pHeight);
         $('.about-col>.img').height(imgHeight); // Correct all images hieght
         var h2InnerH = $('.about-col>.title-text>h2').height(); // get h2 inner hieght
         var h2MarginT = Number(($('.about-col>.title-text>h2').css('margin-top').replace('px', ''))); // get h2 top margin and convert to number
         var h2MarginB = Number($('.about-col>.title-text>h2').css('margin-bottom').replace('px', '')); // get h2 bottom margin and convert to number
-        //console.log(h2InnerH, h2MarginT, h2MarginB);
+        console.log(h2InnerH, h2MarginT, h2MarginB);
         $('.about-col>.title-text').height(pHeight + h2InnerH + h2MarginT + h2MarginB); // Assign section section of about objects hieght
     }
 
@@ -52,14 +54,6 @@ $(document).ready(function () {
     if (screen.width > 414) {
         desktopAboutView();
     }
-
-    // TEAM PICTURE SIZING
-
-    //var teamImageBmh = '80vh';
-    var teamImageWidth = $('.benchMarkDimension').width();
-    //console.log(teamImageBmh, teamImageWidth);
-    //$('.teamMemberImage').css('height', teamImageBmh);
-    $('.member').width(teamImageWidth);
 
     /* ON CLICK SEND MAIL */
     $('#sendBtn').on('click', function () {
@@ -70,7 +64,7 @@ $(document).ready(function () {
             message: $('#message').val()
         };
         console.log('sendMail');
-        console.log(validateMail);
+        //console.log(validateMail);
         console.log(msg);
         validateMail(msg);
     });

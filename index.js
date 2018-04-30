@@ -5,18 +5,16 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-29 17:32:45 
- * Last modified  : 2018-04-30 01:16:42
+ * Last modified  : 2018-04-30 18:32:00
  */
 
 /******** HTML LOADING SCRIPT ***********/
-/* JQUERY */
-import $ from 'script-loader!./node_modules/jquery/dist/jquery.js';
-import './js/_htmlLoader.js';
+/* JQUERY    */ import $ from 'script-loader!./node_modules/jquery/dist/jquery.js';
+/* HTML LOAD */import './js/_htmlLoader.js';
 
 /****************************************/
 /*      LIBRARIES AND FRAMEWORKS        */
 /****************************************/
-
 
 import jQuery from 'script-loader!./node_modules/jquery/dist/jquery.js';
 /* BOOTSTRAP */
@@ -24,6 +22,9 @@ import './node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME 5 */
 import './lib/font-awesome5/svg-with-js/js/fontawesome-all.js';
+/* JQUERY UI */
+import 'webpack-jquery-ui/css';
+import 'webpack-jquery-ui/sortable';
 
 /****************************************/
 /*          TEMPLATE CSS FILES          */
@@ -35,7 +36,6 @@ import './lib/ionicons/css/ionicons.min.css';
 import './lib/owlcarousel/assets/owl.carousel.css';
 import './lib/lightbox/css/lightbox.css';
 import './css/style.css';
-
 
 /****************************************/
 /*          TEMPLATE JS FILES           */
@@ -59,8 +59,6 @@ import 'script-loader!./js/main.js';
 /****************************************/
 /*         IA CSS AND JS FILES          */
 /****************************************/
-
-
 /* 
 ** IA JS FILES
 */
@@ -69,8 +67,5 @@ import './js/_more.js';
 /* 
 ** IA CSS FILES
 */
-//<!--Additional CSS by IA-->
-//<link rel="stylesheet" type="text/css" href="./css/_more.css">
 import './css/_more.css';
-//<link rel="stylesheet" type="text/css" href="./css/_alerts.css">
 import './css/_alerts.css';

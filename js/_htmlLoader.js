@@ -5,7 +5,7 @@
  * @author Clifford Crerar
  *
  * Created at     : 2018-04-29 18:17:51 
- * Last modified  : 2018-04-30 01:24:29
+ * Last modified  : 2018-04-30 18:38:54
  */
 
 /* * * * * * * * * * * * * * * * */
@@ -22,7 +22,7 @@
 /* 7.  TEAM             */ import team from '../html/07_team.html';
 /* 8.  CONTACT          */ import contact from '../html/08_contact.html';
 /* 9.  FOOTER           */ import footer from '../html/09_footer.html';
-/* 10. ALERTS           */ import alerts from '../html/10_alerts.html';
+/* 10. ALERTS            import alerts from '../html/10_alerts.html'; */ // Moved alerts to loader html file
 
 /* * * * * * * * * * * * * * * * */
 /*       INSERT HTML FILES       */
@@ -38,7 +38,7 @@
 /* 7.  */ $('body').append(team);
 /* 8.  */ $('body').append(contact);
 /* 9.  */ $('body').append(footer);
-/* 10. */ $('body').append(alerts);
+/* 10.  $('body').append(alerts);*/
 
 /* * * * * * * * * * * * * * * * */
 /*    CORRECT PORTFOLIO LINKS    */

@@ -1,5 +1,31 @@
 <!doctype html>
 <html>
+    <!-- ALERTS -->
+    <div id="AlertEmailName" class="alert error text-center emailName fixed-top" role="alert">
+        <b>NOT SENT!</b> Please enter your
+        <b>EMAIL ADDRESS</b> and
+        <b>NAME</b>
+    </div>
+    <div id="AlertEmail" class="alert error text-center emailName fixed-top" role="alert">
+        <b>NOT SENT!</b> Please enter a valid
+        <b>EMAIL ADDRESS</b>.
+    </div>
+    <div id="AlertName" class="alert error text-center emailName fixed-top" role="alert">
+        <b>NOT SENT!</b> Please enter your
+        <b>NAME</b>.
+    </div>
+    <div id="AlertSent" class="alert success text-center emailName fixed-top" role="alert">
+        <b>MESSAGE WAS SENT!</b>
+    </div>
+    <div id="subjectWarning" class="alert warning text-center emailName fixed-top" role="alert">
+        Message has not
+        <b>subject</b> do you still want to send?
+        <button id="noSubjectYes" class="btn">YES</button>
+        <button id="noSubjectNo" class="btn">NO</button>
+    </div>
+    <!-- /ALERTS -->
+
+    <!-- LOADER -->
     <div id="loadingDiv" class="loadingDiv">
         <img id="loader" class="loadingGif" src="../img/loading.gif" alt="loader">
     </div>

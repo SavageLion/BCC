@@ -5,14 +5,17 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 15:58:44 
- * Last modified  : 2018-04-30 15:59:33
+ * Last modified  : 2018-04-30 19:35:51
  */
+
+const showAlert = require('./_alerts.js');
+const sendMail = require('./_sendMail.js');
 
 module.exports = (data) => {
     console.log(data);
-
+    var pattern = /^(([^<>()[\]\\.,;:\s@\']+(\.[^<>()[\]\\.,;:\s@\']+)*)|(\'.+\'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var validEmail = data.email.match(pattern);
-    console.log('validmail ', validEmail);
+    //console.log('validmail ', validEmail);
 
     if (data.name == '' && (validEmail == null || data.email == '')) {
         $('#email').css('border-color', 'red');
@@ -30,26 +33,18 @@ module.exports = (data) => {
     } else {
         //alert('Message sent');
         //console.log(data);
-        sendMail(data);
-        showAlert('#AlertSent');
-        if (data.type == 'quote') {
-            $('.modal').modal('hide');
-            $('.modal-backdrop').hide();
-        } else {
-            $('.fbControl').val('');
-            if (screen.width <= 414) {
-                $('.fbType').children().each(function (i, el) {
-                    console.log('index', i);
-                    console.log('Element', el);
-                    if (i == 0) {
-                        $(el).addClass('active');
-                    } else {
-                        $(el).removeClass('active');
-                    }
+        if (data.subject == '') {
+            Promise.resolve(showAlert('#subjectWarning'))
+                .then(() => {
+                    $('#noSubjectYes').on('click', () => {
+                        console.log('Send msg no subject');
+                        sendMail(data);
+                    });
                 });
-            } else {
-                $('#fbType').val('Compliment');
-            }
+
+        } else {
+            showAlert('#AlertSent');
+            sendMail(data);
         }
         //console.log('Message can be sent');
     }

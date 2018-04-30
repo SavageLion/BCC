@@ -5,14 +5,16 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-09 23:07:07 
- * Last modified  : 2018-04-30 15:57:20
+ * Last modified  : 2018-04-30 19:13:53
  */
 
 module.exports = (alertType) => {
     $(alertType).slideDown();
-    setTimeout(() => {
-        $(alertType).slideUp();
-    }, 5000);
+    if (alertType != '#subjectWarning') {
+        setTimeout(() => {
+            $(alertType).slideUp();
+        }, 5000);
+    }
     $('.alert').on('click', (ev) => {
         //console.log($(ev.currentTarget));
         $(ev.currentTarget).slideUp();

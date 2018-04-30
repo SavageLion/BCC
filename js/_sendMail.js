@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-23 20:18:03 
- * Last modified  : 2018-04-30 14:41:01
+ * Last modified  : 2018-04-30 15:57:36
  */
 
 // Declare sending IP
@@ -38,62 +38,4 @@ var sendMail = data => {
       console.log(third);
     }
   });
-};
-
-var showAlert = (alertType) => {
-  $(alertType).slideDown();
-  setTimeout(() => {
-    $(alertType).slideUp();
-  }, 5000);
-  $('.alert').on('click', (ev) => {
-    //console.log($(ev.currentTarget));
-    $(ev.currentTarget).slideUp();
-  });
-};
-
-var validateMail = function (data) {
-  console.log(data);
-
-  var validEmail = data.email.match(pattern);
-  console.log('validmail ', validEmail);
-
-  if (data.name == '' && (validEmail == null || data.email == '')) {
-    $('#email').css('border-color', 'red');
-    $('#name').css('border-color', 'red');
-    // alert('MESSAGE NOT SENT \n Please enter your email address and name.');
-    showAlert('#AlertEmailName');
-  } else if (validEmail == null || data.email == '') {
-    $('#email').css('border-color', 'red');
-    //alert('MESSAGE NOT SENT \n Please enter a valid email address.');
-    showAlert('#AlertEmail');
-  } else if (data.name == '') {
-    $('#name').css('border-color', 'red');
-    //alert('MESSAGE NOT SENT \n Please enter your name.');
-    showAlert('#AlertName');
-  } else {
-    //alert('Message sent');
-    //console.log(data);
-    sendMail(data);
-    showAlert('#AlertSent');
-    if (data.type == 'quote') {
-      $('.modal').modal('hide');
-      $('.modal-backdrop').hide();
-    } else {
-      $('.fbControl').val('');
-      if (screen.width <= 414) {
-        $('.fbType').children().each(function (i, el) {
-          console.log('index', i);
-          console.log('Element', el);
-          if (i == 0) {
-            $(el).addClass('active');
-          } else {
-            $(el).removeClass('active');
-          }
-        });
-      } else {
-        $('#fbType').val('Compliment');
-      }
-    }
-    //console.log('Message can be sent');
-  }
 };

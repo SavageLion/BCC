@@ -1,0 +1,5 @@
+npm run prod
+aws s3 rm s3://bcc.qa.site --recursive
+aws s3 cp ./dist/ s3://bcc.qa.site --recursive
+
+#http://s3-eu-west-1.amazonaws.com/bcc.qa.site/index.html

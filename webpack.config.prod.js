@@ -3,7 +3,8 @@ const HTMLWebPackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './index.js',

@@ -5,16 +5,19 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-29 17:32:45 
- * Last modified  : 2018-04-29 23:01:45
+ * Last modified  : 2018-04-30 01:16:42
  */
+
+/******** HTML LOADING SCRIPT ***********/
+/* JQUERY */
+import $ from 'script-loader!./node_modules/jquery/dist/jquery.js';
+import './js/_htmlLoader.js';
 
 /****************************************/
 /*      LIBRARIES AND FRAMEWORKS        */
 /****************************************/
 
-/* JQUERY */
-//<script src="node_modules/jquery/dist/jquery.js"></script>
-import $ from 'script-loader!./node_modules/jquery/dist/jquery.js';
+
 import jQuery from 'script-loader!./node_modules/jquery/dist/jquery.js';
 /* BOOTSTRAP */
 import './node_modules/bootstrap/dist/css/bootstrap.css';
@@ -61,7 +64,6 @@ import 'script-loader!./js/main.js';
 /* 
 ** IA JS FILES
 */
-import './js/_htmlLoader.js';
 import './js/_alerts.js';
 import './js/_more.js';
 /* 

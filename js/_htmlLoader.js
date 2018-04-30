@@ -5,15 +5,15 @@
  * @author Clifford Crerar
  *
  * Created at     : 2018-04-29 18:17:51 
- * Last modified  : 2018-04-29 23:09:37
+ * Last modified  : 2018-04-30 01:24:29
  */
 
 /* * * * * * * * * * * * * * * * */
 /*     IMPORTING HTML FILES      */
 /* * * * * * * * * * * * * * * * */
 
-/* 1.  ANALYTICS SCRIPT */
-/* 1.  LOADER           */ //import loader from '../html/01_loader.html';
+/* 1.  ANALYTICS SCRIPT */ //import analytics from '../html/00_analyticScript.html';
+/* 1.  LOADER           */ import loader from '../html/01_loader.html';
 /* 2.  NAVIGATION BAR   */ import navigation from '../html/02_navigation.html';
 /* 3.  HOME             */ import home from '../html/03_home.html';
 /* 4.  ABOUT US         */ import about from '../html/04_aboutUs.html';
@@ -28,8 +28,8 @@
 /*       INSERT HTML FILES       */
 /* * * * * * * * * * * * * * * * */
 
-/* 0.  */
-/* 1.  */ //$('body').append(loader);
+/* 0.  */ //$('head').append(analytics);
+/* 1.  */ $('body').append(loader);
 /* 2.  */ $('body').append(navigation);
 /* 3.  */ $('body').append(home);
 /* 4.  */ $('body').append(about);

@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-30 00:18:09
+ * Last modified  : 2018-04-30 02:04:57
  */
 
 $(window).on('load', function () {
@@ -55,10 +55,10 @@ $(document).ready(function () {
 
     // TEAM PICTURE SIZING
 
-    var teamImageBmh = $('.benchMarkHeight').height();
-    var teamImageWidth = $('.benchMarkHeight').width();
+    //var teamImageBmh = '80vh';
+    var teamImageWidth = $('.benchMarkDimension').width();
     console.log(teamImageBmh, teamImageWidth);
-    $('.teamMemberImage').height(teamImageBmh);
+    //$('.teamMemberImage').css('height', teamImageBmh);
     $('.member').width(teamImageWidth);
 
     /* ON CLICK SEND MAIL */

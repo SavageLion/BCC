@@ -63,10 +63,6 @@ module.exports = {
             meta: require('./json/meta.json')
         }),
         new ManifestPlugin(),
-        new CompressionPlugin({
-            algorithm: 'gzip',
-            cache: true
-        }),
         new UglifyJsPlugin({
             sourceMap: true
         })

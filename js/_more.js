@@ -5,13 +5,13 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 22:34:47 
- * Last modified  : 2018-04-30 15:15:39
+ * Last modified  : 2018-04-30 15:45:20
  */
 
 $(window).on('load', function () {
-    setTimeout(function () {
-        $('#loadingDiv').fadeOut(2000);
-    }, 2000);
+
+    $('#loadingDiv').fadeOut(1000);
+
 });
 
 /* Functions that must run when document is ready */

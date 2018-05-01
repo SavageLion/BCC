@@ -5,14 +5,14 @@
  * @author Clifford Crerar
  *
  * Created at     : 2018-04-29 18:17:51 
- * Last modified  : 2018-05-01 12:31:09
+ * Last modified  : 2018-05-01 12:36:45
  */
 
 /* * * * * * * * * * * * * * * * */
 /*     IMPORTING HTML FILES      */
 /* * * * * * * * * * * * * * * * */
 
-/* 1.  ANALYTICS SCRIPT */ //import analytics from '../html/00_analyticScript.html';
+/* 1.  ANALYTICS SCRIPT */ import analytics from '../html/00_analyticScript.html';
 /* 1.  LOADER           */ import loader from '../html/01_loader.html';
 /* 2.  NAVIGATION BAR   */ import navigation from '../html/02_navigation.html';
 /* 3.  HOME             */ import home from '../html/03_home.html';

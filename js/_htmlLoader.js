@@ -5,7 +5,7 @@
  * @author Clifford Crerar
  *
  * Created at     : 2018-04-29 18:17:51 
- * Last modified  : 2018-04-30 18:38:54
+ * Last modified  : 2018-05-01 12:31:09
  */
 
 /* * * * * * * * * * * * * * * * */
@@ -28,7 +28,7 @@
 /*       INSERT HTML FILES       */
 /* * * * * * * * * * * * * * * * */
 
-/* 0.  */ //$('head').append(analytics);
+/* 0.  */ $('head').append(analytics);
 /* 1.  */ $('body').append(loader);
 /* 2.  */ $('body').append(navigation);
 /* 3.  */ $('body').append(home);

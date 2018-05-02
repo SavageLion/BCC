@@ -904,7 +904,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   background: #fff;
   margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {

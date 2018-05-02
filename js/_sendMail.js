@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-23 20:18:03 
- * Last modified  : 2018-04-30 17:58:27
+ * Last modified  : 2018-05-02 15:31:50
  */
 
 // Declare sending IP
@@ -18,7 +18,7 @@ var ADDRESS = 'http://34.242.179.249:8008/';
 
 // declare mail validation patternn
 
-module.exports = data => {
+module.exports = function (data) {
   $.ajax({
     url: ADDRESS,
     method: 'POST',

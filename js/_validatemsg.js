@@ -5,13 +5,13 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 15:58:44 
- * Last modified  : 2018-04-30 19:35:51
+ * Last modified  : 2018-05-02 15:32:44
  */
 
 const showAlert = require('./_alerts.js');
 const sendMail = require('./_sendMail.js');
 
-module.exports = (data) => {
+module.exports = function (data) {
     console.log(data);
     var pattern = /^(([^<>()[\]\\.,;:\s@\']+(\.[^<>()[\]\\.,;:\s@\']+)*)|(\'.+\'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var validEmail = data.email.match(pattern);
@@ -35,8 +35,8 @@ module.exports = (data) => {
         //console.log(data);
         if (data.subject == '') {
             Promise.resolve(showAlert('#subjectWarning'))
-                .then(() => {
-                    $('#noSubjectYes').on('click', () => {
+                .then(function () {
+                    $('#noSubjectYes').on('click', function () {
                         console.log('Send msg no subject');
                         sendMail(data);
                     });
